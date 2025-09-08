@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KindlyMeet – Online Interviews Made Easy</title>
+    <meta name="description"
+        content="Streamline scheduling, reminders, and structured feedback so your team can focus on people, not logistics." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Particles background -->
+    <div id="particles"></div>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav" aria-label="Primary navigation">
+            <a class="brand" href="index.html">
+                <span class="badge" aria-hidden="true">K</span>
+                KindlyMeet
+            </a>
+            <div class="menu" role="menubar">
+                <a role="menuitem" href="features.html">Features</a>
+                <a role="menuitem" href="pricing.html">Pricing</a>
+                <a role="menuitem" href="resources.html">Resources</a>
+                <a role="menuitem" href="contact.html">Contact</a>
+                <a class="btn-login" href="https://dev-edge.co.za:8443/devedge/web_request/login" target="_blank"
+                    rel="noopener">Login</a>
+            </div>
+            <div class="controls">
+                <button id="themeToggle" class="btn-ghost" aria-pressed="false"
+                    aria-label="Toggle dark mode">🌙</button>
+                <button class="btn-outline" data-open="demoModal">Book a demo</button>
+                <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+            </div>
+        </nav>
+        <div class="drawer" id="drawer" role="menu" aria-label="Mobile navigation">
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <a class="btn-ghost" data-open="demoModal">Book a demo</a>
+            <a class="btn-login" href="https://dev-edge.co.za:8443/devedge/web_request/login" target="_blank"
+                rel="noopener">Login</a>
+        </div>
+    </header>
+
+    <main id="top">
+        <!-- Hero -->
+        <h1 id="typewriter"></h1>
+        <section class="hero">
+            <div>
+                <div class="kicker">Online interviews</div>
+                <p class="lead">
+                    KindlyMeet streamlines scheduling, reminders, and structured feedback—so you can focus on real
+                    conversations, not logistics.
+                </p>
+                <div class="cta">
+                    <button id="heroDemo" class="btn">Start free</button>
+                    <a href="features.html" class="btn-ghost">See features</a>
+                </div>
+                <div class="pill">⚡ No downloads • Works in browser</div>
+            </div>
+            <aside class="hero-card" aria-label="Quick actions">
+                <div class="mini-row">
+                    <div class="status">Status: All systems operational</div>
+                    <span class="pill">99.99% uptime</span>
+                </div>
+                <div class="meeting-link" aria-live="polite">
+                    <code id="meetLink">kindlymeet.com/join/product-designer-q4</code>
+                    <button class="copy-btn" id="copyLink" aria-label="Copy meeting link">Copy</button>
+                </div>
+                <div style="margin-top:.8rem; display:grid; gap:.5rem;">
+                    <button class="btn" id="quickSchedule">Schedule interview</button>
+                    <button class="btn-ghost" id="previewRoom">Preview room</button>
+                </div>
+            </aside>
+        </section>
+
+        <!-- Value propositions -->
+        <section class="section">
+            <div class="container">
+                <h2>Built for respectful, efficient hiring</h2>
+                <p class="sub">Everything you need from first touch to final decision.</p>
+                <div class="grid">
+                    <article class="feature reveal">
+                        <div class="icon" aria-hidden="true">⏰</div>
+                        <h3>Smart scheduling</h3>
+                        <p>Automatic time zone detection, calendar sync, and conflict handling.</p>
+                        <div class="accent-bar"></div>
+                    </article>
+                    <article class="feature reveal">
+                        <div class="icon" aria-hidden="true">🔒</div>
+                        <h3>Secure video</h3>
+                        <p>Encrypted browser video with waiting rooms and one-click guest access.</p>
+                        <div class="accent-bar"></div>
+                    </article>
+                    <article class="feature reveal">
+                        <div class="icon" aria-hidden="true">📝</div>
+                        <h3>Structured feedback</h3>
+                        <p>Scorecards and prompts help reduce bias and speed decisions.</p>
+                        <div class="accent-bar"></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story (Dynamic) -->
+        <section class="section alt" id="our-story">
+            <div class="container">
+                <h2>Our Story</h2>
+                <p>
+                    At KindlyMeet, our journey started in 2019 with Humankind Group—100+ years of combined recruitment
+                    expertise driving us to innovate.
+                </p>
+
+                <div class="stats-grid">
+                    <div class="stat reveal">
+                        <div class="stat-value"><span class="counter" data-target="2019">0</span></div>
+                        <div class="stat-label">Founded</div>
+                    </div>
+                    <div class="stat reveal">
+                        <div class="stat-value"><span class="counter" data-target="100">0</span>+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat reveal">
+                        <div class="stat-value"><span class="counter" data-target="500">0</span>+</div>
+                        <div class="stat-label">Clients Served</div>
+                    </div>
+                </div>
+
+                <p>
+                    As hiring evolved—remote work, tech shifts, scale challenges—we built KindlyMeet to save time,
+                    respect candidates, and empower teams.
+                </p>
+
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-year">2019</div>
+                        <div class="timeline-text">Humankind Group founded</div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-text">Launched first one-way interview beta</div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-text">1,000 interviews hosted monthly</div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-text">KindlyMeet 2.0 with AI-powered insights</div>
+                    </div>
+                </div>
+
+                <p><em>Let’s meet your next great hire, together.</em></p>
+            </div>
+        </section>
+
+        <!-- Social proof -->
+        <section class="section alt">
+            <div class="container">
+                <h2>Loved by thoughtful teams</h2>
+                <p class="sub">Simple for candidates. Powerful for hiring managers.</p>
+                <div class="logo-row">
+                    <div class="logo-pill">Nova</div>
+                    <div class="logo-pill">BrightLabs</div>
+                    <div class="logo-pill">Slate</div>
+                    <div class="logo-pill">Northstar</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to action -->
+        <section class="section">
+            <div class="container callout">
+                <div>
+                    <h2>Ready to interview more kindly?</h2>
+                    <p class="sub">Start free today. Upgrade as your team scales.</p>
+                </div>
+                <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
+                    <a class="btn" href="pricing.html">View pricing</a>
+                    <button class="btn-outline" data-open="demoModal">Book a demo</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container footer-grid">
+            <div>
+                <div class="brand small"><span class="badge">K</span> KindlyMeet</div>
+                <div class="muted">Theme: #FAEA93, black, white</div>
+            </div>
+            <div class="fcol">
+                <strong>Product</strong>
+                <a href="features.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+            </div>
+            <div class="fcol">
+                <strong>Company</strong>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="fcol">
+                <strong>Follow</strong>
+                <a href="#">LinkedIn</a>
+                <a href="#">X</a>
+            </div>
+        </div>
+        <div class="container fine">
+            <span>&copy; <span id="year"></span> KindlyMeet.</span>
+            <a href="#" class="muted">Privacy</a>
+            <a href="#" class="muted">Terms</a>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <dialog id="demoModal" class="modal" aria-labelledby="demoTitle">
+        <form method="dialog" class="modal-card">
+            <header class="modal-header">
+                <h3 id="demoTitle">Book a demo</h3>
+                <button value="cancel" class="btn-ghost" aria-label="Close">✕</button>
+            </header>
+            <div class="modal-body">
+                <form id="demoForm" class="form" novalidate>
+                    <div class="field">
+                        <label for="company"><strong>Company</strong></label>
+                        <input class="input" id="company" name="company" placeholder="Acme Inc." required />
+                        <small class="error">Company is required.</small>
+                    </div>
+                    <div class="field">
+                        <label for="people"><strong>Team size</strong></label>
+                        <select class="input" id="people" name="people" required>
+                            <option value="">Select…</option>
+                            <option>1–10</option>
+                            <option>11–50</option>
+                            <option>51–200</option>
+                            <option>200+</option>
+                        </select>
+                        <small class="error">Please select a team size.</small>
+                    </div>
+                    <div class="field">
+                        <label for="when"><strong>Preferred time</strong></label>
+                        <input class="input" id="when" type="datetime-local" required />
+                        <small class="error">Pick a time.</small>
+                    </div>
+                    <button class="btn" type="submit">Request demo</button>
+                </form>
+            </div>
+        </form>
+    </dialog>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.0/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

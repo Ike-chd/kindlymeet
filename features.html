@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Features – KindlyMeet</title>
+    <meta name="description"
+        content="Explore KindlyMeet features: smart scheduling, secure video, structured feedback, reminders, and more." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Particles background -->
+    <div id="particles"></div>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav" aria-label="Primary navigation">
+            <a class="brand" href="index.html">
+                <span class="badge" aria-hidden="true">K</span> KindlyMeet
+            </a>
+            <div class="menu" role="menubar">
+                <a role="menuitem" href="features.html" aria-current="page">Features</a>
+                <a role="menuitem" href="pricing.html">Pricing</a>
+                <a role="menuitem" href="resources.html">Resources</a>
+                <a role="menuitem" href="contact.html">Contact</a>
+                <a class="btn-login" href="https://dev-edge.co.za:8443/devedge/web_request/login" target="_blank"
+                    rel="noopener">Login</a>
+            </div>
+            <div class="controls">
+                <button id="themeToggle" class="btn-ghost" aria-pressed="false"
+                    aria-label="Toggle dark mode">🌙</button>
+                <button class="btn-outline" data-open="demoModal">Book a demo</button>
+                <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+            </div>
+        </nav>
+        <div class="drawer" id="drawer" role="menu" aria-label="Mobile navigation">
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <a class="btn-ghost" data-open="demoModal">Book a demo</a>
+            <a class="btn-login" href="https://dev-edge.co.za:8443/devedge/web_request/login" target="_blank"
+                rel="noopener">Login</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Features that respect everyone’s time</h1>
+                <p class="sub">From first touch to final decision, KindlyMeet keeps things clear and kind.</p>
+            </div>
+        </section>
+
+        <!-- Smart Scheduling -->
+        <section class="section" id="scheduling">
+            <div class="container">
+                <h2>Smart scheduling</h2>
+                <p class="sub">Time zones, availability, and conflicts handled automatically.</p>
+                <div class="grid">
+                    <article class="feature reveal">
+                        <div class="icon" aria-hidden="true">🌍</div>
+                        <h3>Time zone aware</h3>
+                        <p>Show local times for candidates and panels, without mental math.</p>
+                        <div class="accent-bar"></div>
+                    </article>
+                    <article class="feature reveal">
+                        <div class="icon" aria-hidden="true">📅</div>
+                        <h3>Calendar sync</h3>
+                        <p>Connect your calendars to avoid overlaps and double-booking.</p>
+                        <div class="accent-bar"></div>
+                    </article>
+                    <article class="feature reveal">
+                        <div class="icon" aria-hidden="true">🔁</div>
+                        <h3>Easy rescheduling</h3>
+                        <p>Self-serve links cut the back-and-forth and reduce no-shows.</p>
+                        <div class="accent-bar"></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Interview -->
+        <section class="section alt" id="video">
+            <div class="container">
+                <h2>Video interview</h2>
+                <p class="sub">Join in the browser with secure rooms and guest access.</p>
+                <div class="grid">
+                    <article class="feature reveal">
+                        <div class="icon" aria-hidden="true">🛡️</div>
+                        <h3>Secure rooms</h3>
+                        <p>Waiting rooms and expiring links keep access under control.</p>
+                        <div class="accent-bar"></div>
+                    </article>
+                    <article class="feature reveal">
+                        <div class="icon" aria-hidden="true">🎥</div>
+                        <h3>Crystal audio/video</h3>
+                        <p>Optimized for interviews with low-latency and noise control.</p>
+                        <div class="accent-bar"></div>
+                    </article>
+                    <article class="feature reveal">
+                        <div class="icon" aria-hidden="true">👥</div>
+                        <h3>Panel-ready</h3>
+                        <p>Invite multiple interviewers and take synced notes.</p>
+                        <div class="accent-bar"></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Structured Feedback -->
+        <section class="section" id="feedback">
+            <div class="container">
+                <h2>Structured feedback</h2>
+                <p class="sub">Scorecards and prompts help teams decide fairly and quickly.</p>
+                <div class="grid">
+                    <article class="feature reveal">
+                        <div class="icon" aria-hidden="true">📊</div>
+                        <h3>Scorecards</h3>
+                        <p>Align on criteria, reduce bias, and create clear signals.</p>
+                        <div class="accent-bar"></div>
+                    </article>
+                    <article class="feature reveal">
+                        <div class="icon" aria-hidden="true">⏱️</div>
+                        <h3>Reminders</h3>
+                        <p>Gentle nudges keep interviews and decisions moving.</p>
+                        <div class="accent-bar"></div>
+                    </article>
+                    <article class="feature reveal">
+                        <div class="icon" aria-hidden="true">🔎</div>
+                        <h3>Analytics</h3>
+                        <p>Spot bottlenecks, improve time-to-hire, and track outcomes.</p>
+                        <div class="accent-bar"></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs -->
+        <section class="section faq-block" id="faq">
+            <div class="container">
+                <h2>Frequently asked questions</h2>
+                <div class="faq">
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            What is KindlyMeet, and how does it work? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            KindlyMeet is an innovative one-way interview software designed to simplify the hiring
+                            process.
+                            Employers send interview questions to candidates, who respond at their convenience through
+                            video
+                            recordings. This saves time while allowing you to evaluate candidates effectively.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            What are the benefits of using KindlyMeet for hiring? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            <ul>
+                                <li>Save time by eliminating scheduling conflicts.</li>
+                                <li>Review candidate responses at your convenience.</li>
+                                <li>Create a consistent evaluation process with standardised questions.</li>
+                                <li>Reach more candidates quickly, especially in bulk recruitment.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            Can I customise the questions for different roles? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            Yes. KindlyMeet allows you to tailor questions for each role or job opening.
+                            Create unique question sets that match the skills and qualities you’re looking for.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            How secure is the platform for candidate information? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            We take data security seriously. KindlyMeet complies with relevant data
+                            protection laws, including POPIA, to help safeguard both candidate and employer information.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            Can candidates use KindlyMeet on mobile devices? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            Yes. KindlyMeet is mobile-friendly and works seamlessly across smartphones,
+                            tablets, and desktops.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            How do I evaluate the candidate’s responses? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            Once a candidate submits their responses, you’ll receive a notification.
+                            Review the video recordings, rate responses, and add notes directly on the platform.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            What types of companies benefit most from KindlyMeet? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            KindlyMeet is ideal for businesses of all sizes, especially those that:
+                            <ul>
+                                <li>Conduct high-volume hiring (e.g., call centres, retail, BPOs).</li>
+                                <li>Need to streamline their hiring process.</li>
+                                <li>Want to improve efficiency in early-stage candidate screening.</li>
+                                <li>Care deeply about culture fit and candidate experience.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            Can I integrate KindlyMeet with my ATS? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            Yes. KindlyMeet integrates with most leading Applicant Tracking Systems (ATS)
+                            for a seamless flow of candidate data.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            How long does it take candidates to complete an interview? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            On average, a one-way interview takes candidates 3–5 minutes to complete,
+                            depending on the number and complexity of your questions.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            Is technical support available if I or my candidates encounter issues? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            Absolutely. Our support team is available 24/7 to assist employers and
+                            candidates with any technical or usage-related issues.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container footer-grid">
+            <div>
+                <div class="brand small"><span class="badge">K</span> KindlyMeet</div>
+                <div class="muted">Theme: #FAEA93, black, white</div>
+            </div>
+            <div class="fcol">
+                <strong>Product</strong>
+                <a href="features.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+            </div>
+            <div class="fcol">
+                <strong>Company</strong>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="fcol">
+                <strong>Follow</strong>
+                <a href="#">LinkedIn</a>
+                <a href="#">X</a>
+            </div>
+        </div>
+        <div class="container fine">
+            <span>&copy; <span id="year"></span> KindlyMeet.</span>
+            <a href="#" class="muted">Privacy</a>
+            <a href="#" class="muted">Terms</a>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <dialog id="demoModal" class="modal" aria-labelledby="demoTitle">
+        <form method="dialog" class="modal-card">
+            <header class="modal-header">
+                <h3 id="demoTitle">Book a demo</h3>
+                <button value="cancel" class="btn-ghost" aria-label="Close">✕</button>
+            </header>
+            <div class="modal-body">
+                <form id="demoForm" class="form" novalidate>
+                    <div class="field">
+                        <label for="company"><strong>Company</strong></label>
+                        <input class="input" id="company" name="company" placeholder="Acme Inc." required />
+                        <small class="error">Company is required.</small>
+                    </div>
+                    <div class="field">
+                        <label for="people"><strong>Team size</strong></label>
+                        <select class="input" id="people" name="people" required>
+                            <option value="">Select…</option>
+                            <option>1–10</option>
+                            <option>11–50</option>
+                            <option>51–200</option>
+                            <option>200+</option>
+                        </select>
+                        <small class="error">Please select a team size.</small>
+                    </div>
+                    <div class="field">
+                        <label for="when"><strong>Preferred time</strong></label>
+                        <input class="input" id="when" type="datetime-local" required />
+                        <small class="error">Pick a time.</small>
+                    </div>
+                    <button class="btn" type="submit">Request demo</button>
+                </form>
+            </div>
+        </form>
+    </dialog>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.0/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

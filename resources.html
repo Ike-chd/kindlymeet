@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resources – KindlyMeet</title>
+    <meta name="description" content="Guides, testimonials, and knowledge to help you hire kindly and effectively." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Particles background -->
+    <div id="particles"></div>
+    <header class="header" role="banner">
+        <nav class="nav">
+            <a class="brand" href="index.html"><span class="badge">K</span> KindlyMeet</a>
+            <div class="menu">
+                <a href="features.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="resources.html" aria-current="page">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="controls">
+                <button id="themeToggle" class="btn-ghost">🌙</button>
+                <button class="btn-outline" data-open="demoModal">Book a demo</button>
+                <button class="burger" id="burger" aria-expanded="false"><span></span></button>
+            </div>
+        </nav>
+        <div class="drawer" id="drawer">
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <button class="btn-ghost" data-open="demoModal">Book a demo</button>
+        </div>
+    </header>
+    
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Resources</h1>
+                <p class="sub">Guides, FAQs, and stories from teams hiring kindly.</p>
+            </div>
+        </section>
+        
+        <!-- Testimonials Slider -->
+        <section class="section">
+            <div class="container">
+                <h2>What teams say</h2>
+                <div class="slider reveal" aria-roledescription="carousel" aria-label="Testimonials">
+                    <div class="slides" id="slides">
+                        <div class="slide">
+                            <blockquote>We cut scheduling time by 70% and candidates compliment the clarity.</blockquote>
+                            <div class="who">— Aisha, Talent Lead</div>
+                        </div>
+                        <div class="slide">
+                            <blockquote>Panels finally feel coordinated. Scorecards are gold.</blockquote>
+                            <div class="who">— Liam, Head of Engineering</div>
+                        </div>
+                        <div class="slide">
+                            <blockquote>Reminders and self-serve rescheduling reduced no-shows dramatically.</blockquote>
+                            <div class="who">— Priya, Recruiter</div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <div class="dotbar">
+                            <div class="dot" data-i="0"></div>
+                            <div class="dot" data-i="1"></div>
+                            <div class="dot" data-i="2"></div>
+                        </div>
+                        <div style="display:flex; gap:.5rem;">
+                            <button class="btn-ghost" id="prev">‹ Prev</button>
+                            <button class="btn-ghost" id="next">Next ›</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Knowledge cards -->
+        <section class="section alt">
+            <div class="container">
+                <h2>Guides</h2>
+                <div class="grid">
+                    <article class="feature reveal">
+                        <div class="icon">📘</div>
+                        <h3>Interview structure</h3>
+                        <p>Design fair interviews with consistent signals.</p>
+                        <div class="accent-bar"></div>
+                    </article>
+                    <article class="feature reveal">
+                        <div class="icon">📣</div>
+                        <h3>Candidate comms</h3>
+                        <p>Keep candidates informed with respectful updates.</p>
+                        <div class="accent-bar"></div>
+                    </article>
+                    <article class="feature reveal">
+                        <div class="icon">🧭</div>
+                        <h3>Panel best practices</h3>
+                        <p>Align interviewers and avoid bias traps.</p>
+                        <div class="accent-bar"></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA -->
+        <section class="section">
+            <div class="container callout">
+                <div>
+                    <h2>Want a personalized walkthrough?</h2>
+                    <p class="sub">We’ll tailor the demo to your hiring setup.</p>
+                </div>
+                <button class="btn" data-open="demoModal">Book a demo</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer"></footer>
+    <dialog id="demoModal" class="modal"></dialog>
+    <div class="toast" id="toast"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.0/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact – KindlyMeet</title>
+    <meta name="description" content="Get in touch for questions, partnerships, or support." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Particles background -->
+    <div id="particles"></div>
+    <header class="header" role="banner">
+        <nav class="nav">
+            <a class="brand" href="index.html"><span class="badge">K</span> KindlyMeet</a>
+            <div class="menu">
+                <a href="features.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+            </div>
+            <div class="controls">
+                <button id="themeToggle" class="btn-ghost">🌙</button>
+                <button class="btn-outline" data-open="demoModal">Book a demo</button>
+                <button class="burger" id="burger" aria-expanded="false"><span></span></button>
+            </div>
+        </nav>
+        <div class="drawer" id="drawer">
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <button class="btn-ghost" data-open="demoModal">Book a demo</button>
+        </div>
+    </header>
+    
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contact us</h1>
+                <p class="sub">Questions, partnerships, or support—drop us a note.</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="container contact-grid">
+                <form class="form reveal" id="contactForm" novalidate>
+                    <div class="field">
+                        <label for="name"><strong>Name</strong></label>
+                        <input class="input" id="name" name="name" type="text" placeholder="Your full name" required />
+                        <small class="error">Please enter your name.</small>
+                    </div>
+                    <div class="field">
+                        <label for="email"><strong>Email</strong></label>
+                        <input class="input" id="email" name="email" type="email" placeholder="you@example.com" required />
+                        <small class="error">Enter a valid email address.</small>
+                    </div>
+                    <div class="field">
+                        <label for="message"><strong>Message</strong></label>
+                        <textarea class="textarea" id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+                        <small class="error">Please include a short message.</small>
+                    </div>
+                    <button class="btn" type="submit">Send message</button>
+                </form>
+                
+                <aside class="card contact-card reveal">
+                    <h3>Reach us directly</h3>
+                    <p class="muted">We typically respond within one business day.</p>
+                    <div class="list">
+                        <div>📧 hello@kindlymeet.com</div>
+                        <div>📞 +27 (0)10 000 0000</div>
+                        <div>📍 Johannesburg, South Africa</div>
+                    </div>
+                    <button class="btn-outline" data-open="demoModal">Book a demo</button>
+                </aside>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer"></footer>
+    <dialog id="demoModal" class="modal"></dialog>
+    <div class="toast" id="toast"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.0/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

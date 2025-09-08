@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pricing – KindlyMeet</title>
+    <meta name="description" content="Simple, fair pricing for teams of any size." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Particles background -->
+    <div id="particles"></div>
+    <header class="header" role="banner">
+        <nav class="nav">
+            <a class="brand" href="index.html"><span class="badge">K</span> KindlyMeet</a>
+            <div class="menu">
+                <a href="features.html">Features</a>
+                <a href="pricing.html" aria-current="page">Pricing</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="controls">
+                <button id="themeToggle" class="btn-ghost">🌙</button>
+                <button class="btn-outline" data-open="demoModal">Book a demo</button>
+                <button class="burger" id="burger" aria-expanded="false"><span></span></button>
+            </div>
+        </nav>
+        <div class="drawer" id="drawer">
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <button class="btn-ghost" data-open="demoModal">Book a demo</button>
+        </div>
+    </header>
+    
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Simple, fair pricing</h1>
+                <p class="sub">Start free. Upgrade when your team grows.</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="container pricing">
+                <div class="card reveal" aria-label="Starter plan">
+                    <span class="tag">Starter</span>
+                    <div class="price">Free</div>
+                    <div class="list">
+                        <div>• 1 calendar</div>
+                        <div>• 5 active interviews</div>
+                        <div>• Email reminders</div>
+                    </div>
+                    <a class="btn-outline" href="contact.html">Get started</a>
+                </div>
+                
+                <div class="card reveal highlight" aria-label="Team plan">
+                    <span class="tag">Team</span>
+                    <div class="price">$19 <span class="unit">/user</span></div>
+                    <div class="list">
+                        <div>• Multiple calendars</div>
+                        <div>• SMS reminders</div>
+                        <div>• Scorecards</div>
+                    </div>
+                    <button class="btn" data-open="demoModal">Try Team</button>
+                </div>
+                
+                <div class="card reveal" aria-label="Business plan">
+                    <span class="tag">Business</span>
+                    <div class="price">$49 <span class="unit">/user</span></div>
+                    <div class="list">
+                        <div>• SSO & roles</div>
+                        <div>• Advanced analytics</div>
+                        <div>• Priority support</div>
+                    </div>
+                    <a class="btn-outline" href="contact.html">Talk to sales</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section alt">
+            <div class="container callout">
+                <div>
+                    <h2>Not sure which plan fits?</h2>
+                    <p class="sub">Tell us your goals and we’ll recommend a setup.</p>
+                </div>
+                <button class="btn" data-open="demoModal">Book a demo</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer"></footer>
+    <dialog id="demoModal" class="modal"></dialog>
+    <div class="toast" id="toast"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.0/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
