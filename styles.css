@@ -38,6 +38,7 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    z-index: 1;
 }
 
 a {
@@ -205,7 +206,7 @@ select:focus {
     background: none;
     color: var(--fg);
     border: 2px solid var(--primary);
-    padding: .5rem 1rem;
+    padding: .5rem 1rem !important;
     font-weight: 600;
 }
 
@@ -565,7 +566,9 @@ select:focus {
 
 .slide .who {
     color: var(--muted);
+    margin-inline-start: 40px;
 }
+
 
 .slider-controls {
     position: absolute;
@@ -766,6 +769,15 @@ select:focus {
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.fixed-bottom-bg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
 }
 
 /* Responsive */
