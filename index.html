@@ -19,7 +19,7 @@
     <header class="header" role="banner">
         <nav class="nav" aria-label="Primary navigation">
             <a class="brand" href="index.html">
-                <img src="KindlyMeet-word-logo - Copy.png" alt="" style="max-width: 370px; height: auto;" />
+                <img src="KindlyMeet-word-logo - Copy.png" alt="" />
                 <!-- <span class="badge" aria-hidden="true">K</span>
                 KindlyMeet -->
             </a>
@@ -34,7 +34,7 @@
             <div class="controls">
                 <button id="themeToggle" class="btn-ghost" aria-pressed="false"
                     aria-label="Toggle dark mode">🌙</button>
-                <button class="btn-outline" data-open="demoModal">Book a demo</button>
+                <button class="btn-outline" id="bookdemo" data-open="demoModal">Book a demo</button>
                 <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
             </div>
         </nav>
@@ -51,7 +51,9 @@
 
     <main id="top">
         <!-- Hero -->
-        <h1 id="typewriter" style="text-align: center;"></h1>
+        <div id="typewriter-container">
+            <h1 id="typewriter"></h1>
+        </div>
         <section class="hero">
             <div>
                 <div class="kicker">Online interviews</div>
@@ -192,28 +194,32 @@
     </main>
 
     <!-- Footer -->
-    <footer role="contentinfo">
+    <footer role="contentinfo" class="footer">
         <div class="container footer-grid">
-            <div>
-                <div class="brand small"><span class="badge">K</span> KindlyMeet</div>
-                <div class="muted">Theme: #FAEA93, black, white</div>
+            <div class="footer-brand">
+                <img src="KindlyMeet-word-logo - Copy.png" alt="KindlyMeet logo" />
+                <p class="muted">Theme: #FAEA93, black, white</p>
             </div>
+
             <div class="fcol">
                 <strong>Product</strong>
                 <a href="features.html">Features</a>
                 <a href="pricing.html">Pricing</a>
             </div>
+
             <div class="fcol">
                 <strong>Company</strong>
                 <a href="resources.html">Resources</a>
                 <a href="contact.html">Contact</a>
             </div>
+
             <div class="fcol">
                 <strong>Follow</strong>
                 <a href="#">LinkedIn</a>
                 <a href="#">X</a>
             </div>
         </div>
+
         <div class="container fine">
             <span>&copy; <span id="year"></span> KindlyMeet.</span>
             <a href="#" class="muted">Privacy</a>
