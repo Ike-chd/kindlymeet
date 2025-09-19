@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="Smiley-icon.png">
 </head>
+
 <body>
     <!-- Particles background -->
     <div id="particles"></div>
@@ -27,7 +29,7 @@
             </div>
             <div class="controls">
                 <button id="themeToggle" class="btn-ghost">🌙</button>
-                <button class="btn-outline" data-open="demoModal">Book a demo</button>
+                <button class="btn-outline" id="bookdemo" data-open="demoModal">Book a demo</button>
                 <button class="burger" id="burger" aria-expanded="false"><span></span></button>
             </div>
         </nav>
@@ -39,7 +41,7 @@
             <button class="btn-ghost" data-open="demoModal">Book a demo</button>
         </div>
     </header>
-    
+
     <main>
         <section class="page-hero">
             <div class="container">
@@ -47,7 +49,7 @@
                 <p class="sub">Start free. Upgrade when your team grows.</p>
             </div>
         </section>
-        
+
         <section class="section">
             <div class="container pricing">
                 <div class="card reveal" aria-label="Starter plan">
@@ -60,10 +62,10 @@
                     </div>
                     <a class="btn-outline" href="contact.html">Get started</a>
                 </div>
-                
+
                 <div class="card reveal highlight" aria-label="Team plan">
                     <span class="tag">Team</span>
-                    <div class="price">$19 <span class="unit">/user</span></div>
+                    <div class="price">R49 <span class="unit">/user</span></div>
                     <div class="list">
                         <div>• Multiple calendars</div>
                         <div>• SMS reminders</div>
@@ -71,10 +73,10 @@
                     </div>
                     <button class="btn" data-open="demoModal">Try Team</button>
                 </div>
-                
+
                 <div class="card reveal" aria-label="Business plan">
                     <span class="tag">Business</span>
-                    <div class="price">$49 <span class="unit">/user</span></div>
+                    <div class="price">R99 <span class="unit">/user</span></div>
                     <div class="list">
                         <div>• SSO & roles</div>
                         <div>• Advanced analytics</div>
@@ -84,7 +86,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="section alt">
             <div class="container callout">
                 <div>
@@ -95,13 +97,46 @@
             </div>
         </section>
     </main>
-    
-    <footer class="site-footer"></footer>
+
+    <!-- Footer -->
+    <footer role="contentinfo" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="KindlyMeet-word-logo - Copy.png" alt="KindlyMeet logo" />
+            </div>
+
+            <div class="fcol">
+                <strong>Product</strong>
+                <a href="features.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+            </div>
+
+            <div class="fcol">
+                <strong>Company</strong>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="fcol">
+                <strong>Follow</strong>
+                <a href="#">LinkedIn</a>
+                <a href="#">X</a>
+            </div>
+        </div>
+
+        <div class="container fine">
+            <span>&copy; <span id="year"></span> KindlyMeet.</span>
+            <a href="#" class="muted">Privacy</a>
+            <a href="#" class="muted">Terms</a>
+        </div>
+    </footer>
+
     <dialog id="demoModal" class="modal"></dialog>
     <div class="toast" id="toast"></div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.0/tsparticles.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.min.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
