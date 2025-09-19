@@ -33,7 +33,7 @@
             <div class="controls">
                 <button id="themeToggle" class="btn-ghost" aria-pressed="false"
                     aria-label="Toggle dark mode">🌙</button>
-                <button class="btn-outline" data-open="demoModal">Book a demo</button>
+                <button class="btn-outline" id="bookdemo" data-open="demoModal">Book a demo</button>
                 <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
             </div>
         </nav>
@@ -263,28 +263,32 @@
     </main>
 
     <!-- Footer -->
-    <footer role="contentinfo">
+    <footer role="contentinfo" class="footer">
         <div class="container footer-grid">
-            <div>
-                <div class="brand small"><span class="badge">K</span> KindlyMeet</div>
-                <div class="muted">Theme: #FAEA93, black, white</div>
+            <div class="footer-brand">
+                <img src="KindlyMeet-word-logo - Copy.png" alt="KindlyMeet logo" />
+                <p class="muted">Theme: #FAEA93, black, white</p>
             </div>
+
             <div class="fcol">
                 <strong>Product</strong>
                 <a href="features.html">Features</a>
                 <a href="pricing.html">Pricing</a>
             </div>
+
             <div class="fcol">
                 <strong>Company</strong>
                 <a href="resources.html">Resources</a>
                 <a href="contact.html">Contact</a>
             </div>
+
             <div class="fcol">
                 <strong>Follow</strong>
                 <a href="#">LinkedIn</a>
                 <a href="#">X</a>
             </div>
         </div>
+
         <div class="container fine">
             <span>&copy; <span id="year"></span> KindlyMeet.</span>
             <a href="#" class="muted">Privacy</a>
