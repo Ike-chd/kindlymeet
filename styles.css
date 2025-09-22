@@ -1059,3 +1059,41 @@ p {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/* Bigger modal with curved border */
+.modal {
+    width: 500px;
+    /* make it bigger */
+    max-width: 90%;
+    border-radius: 12px;
+    /* curved edges */
+    padding: 1.5rem;
+}
+
+.modal-body .field {
+    margin-bottom: 1rem;
+}
+
+.error {
+    display: none;
+    color: red;
+    font-size: 0.8rem;
+}
+
+.modal-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* centers the title */
+    align-items: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
