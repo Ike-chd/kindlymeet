@@ -108,6 +108,126 @@
                 </div>
             </div>
         </section>
+
+        <!-- FAQs -->
+        <section class="section faq-block" id="faq">
+            <div class="container">
+                <h2>Frequently asked questions</h2>
+                <div class="faq">
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            What is KindlyMeet, and how does it work? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            KindlyMeet is an innovative one-way interview software designed to simplify the hiring
+                            process.
+                            Employers send interview questions to candidates, who respond at their convenience through
+                            video
+                            recordings. This saves time while allowing you to evaluate candidates effectively.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            What are the benefits of using KindlyMeet for hiring? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            <ul>
+                                <li>Save time by eliminating scheduling conflicts.</li>
+                                <li>Review candidate responses at your convenience.</li>
+                                <li>Create a consistent evaluation process with standardised questions.</li>
+                                <li>Reach more candidates quickly, especially in bulk recruitment.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            Can I customise the questions for different roles? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            Yes. KindlyMeet allows you to tailor questions for each role or job opening.
+                            Create unique question sets that match the skills and qualities you’re looking for.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            How secure is the platform for candidate information? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            We take data security seriously. KindlyMeet complies with relevant data
+                            protection laws, including POPIA, to help safeguard both candidate and employer information.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            Can candidates use KindlyMeet on mobile devices? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            Yes. KindlyMeet is mobile-friendly and works seamlessly across smartphones,
+                            tablets, and desktops.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            How do I evaluate the candidate’s responses? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            Once a candidate submits their responses, you’ll receive a notification.
+                            Review the video recordings, rate responses, and add notes directly on the platform.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            What types of companies benefit most from KindlyMeet? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            KindlyMeet is ideal for businesses of all sizes, especially those that:
+                            <ul>
+                                <li>Conduct high-volume hiring (e.g., call centres, retail, BPOs).</li>
+                                <li>Need to streamline their hiring process.</li>
+                                <li>Want to improve efficiency in early-stage candidate screening.</li>
+                                <li>Care deeply about culture fit and candidate experience.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            Can I integrate KindlyMeet with my ATS? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            Yes. KindlyMeet integrates with most leading Applicant Tracking Systems (ATS)
+                            for a seamless flow of candidate data.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            How long does it take candidates to complete an interview? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            On average, a one-way interview takes candidates 3–5 minutes to complete,
+                            depending on the number and complexity of your questions.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-q" aria-expanded="false">
+                            Is technical support available if I or my candidates encounter issues? <span>+</span>
+                        </button>
+                        <div class="faq-a">
+                            Absolutely. Our support team is available 24/7 to assist employers and
+                            candidates with any technical or usage-related issues.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <!-- CTA -->
         <section class="section">
@@ -154,7 +274,33 @@
         </div>
     </footer>
 
-    <dialog id="demoModal" class="modal"></dialog>
+    <dialog id="demoModal" class="modal" aria-labelledby="demoTitle">
+        <form id="demoForm" class="modal-card" novalidate>
+            <header class="modal-header">
+                <h3 id="demoTitle">Book a demo</h3>
+                <button type="button" id="closeModal" class="btn-ghost close-btn" aria-label="Close">✕</button>
+            </header>
+            <div class="modal-body">
+                <div class="field">
+                    <label for="fullname"><strong>Full Name</strong></label>
+                    <input class="input" id="fullname" name="fullname" placeholder="John Doe" required />
+                    <small class="error">Full name is required.</small>
+                </div>
+                <div class="field">
+                    <label for="email"><strong>Email</strong></label>
+                    <input class="input" id="email" name="email" type="email" placeholder="you@example.com" required />
+                    <small class="error">Valid email is required.</small>
+                </div>
+                <div class="field">
+                    <label for="timeslot"><strong>Time Slot</strong></label>
+                    <input class="input" id="timeslot" name="timeslot" type="datetime-local" required />
+                    <small class="error">Please pick a time slot.</small>
+                </div>
+                <button class="btn" type="submit">Request demo</button>
+            </div>
+        </form>
+    </dialog>
+
     <div class="toast" id="toast"></div>
     
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.0/tsparticles.bundle.min.js"></script>
