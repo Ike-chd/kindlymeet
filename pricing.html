@@ -131,7 +131,32 @@
         </div>
     </footer>
 
-    <dialog id="demoModal" class="modal"></dialog>
+    <dialog id="demoModal" class="modal" aria-labelledby="demoTitle">
+        <form id="demoForm" class="modal-card" novalidate>
+            <header class="modal-header">
+                <h3 id="demoTitle">Book a demo</h3>
+                <button type="button" id="closeModal" class="btn-ghost close-btn" aria-label="Close">✕</button>
+            </header>
+            <div class="modal-body">
+                <div class="field">
+                    <label for="fullname"><strong>Full Name</strong></label>
+                    <input class="input" id="fullname" name="fullname" placeholder="John Doe" required />
+                    <small class="error">Full name is required.</small>
+                </div>
+                <div class="field">
+                    <label for="email"><strong>Email</strong></label>
+                    <input class="input" id="email" name="email" type="email" placeholder="you@example.com" required />
+                    <small class="error">Valid email is required.</small>
+                </div>
+                <div class="field">
+                    <label for="timeslot"><strong>Time Slot</strong></label>
+                    <input class="input" id="timeslot" name="timeslot" type="datetime-local" required />
+                    <small class="error">Please pick a time slot.</small>
+                </div>
+                <button class="btn" type="submit">Request demo</button>
+            </div>
+        </form>
+    </dialog>
     <div class="toast" id="toast"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.0/tsparticles.bundle.min.js"></script>
