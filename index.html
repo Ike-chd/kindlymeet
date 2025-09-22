@@ -9,6 +9,8 @@
         content="Streamline scheduling, reminders, and structured feedback so your team can focus on people, not logistics." />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="Smiley-icon.png">
+    <style>
+    </style>
 </head>
 
 <body>
@@ -229,36 +231,28 @@
 
     <!-- Demo Modal -->
     <dialog id="demoModal" class="modal" aria-labelledby="demoTitle">
-        <form method="dialog" class="modal-card">
+        <form id="demoForm" class="modal-card" novalidate>
             <header class="modal-header">
                 <h3 id="demoTitle">Book a demo</h3>
-                <button value="cancel" class="btn-ghost" aria-label="Close">✕</button>
+                <button type="button" id="closeModal" class="btn-ghost close-btn" aria-label="Close">✕</button>
             </header>
             <div class="modal-body">
-                <form id="demoForm" class="form" novalidate>
-                    <div class="field">
-                        <label for="company"><strong>Company</strong></label>
-                        <input class="input" id="company" name="company" placeholder="Acme Inc." required />
-                        <small class="error">Company is required.</small>
-                    </div>
-                    <div class="field">
-                        <label for="people"><strong>Team size</strong></label>
-                        <select class="input" id="people" name="people" required>
-                            <option value="">Select…</option>
-                            <option>1–10</option>
-                            <option>11–50</option>
-                            <option>51–200</option>
-                            <option>200+</option>
-                        </select>
-                        <small class="error">Please select a team size.</small>
-                    </div>
-                    <div class="field">
-                        <label for="when"><strong>Preferred time</strong></label>
-                        <input class="input" id="when" type="datetime-local" required />
-                        <small class="error">Pick a time.</small>
-                    </div>
-                    <button class="btn" type="submit">Request demo</button>
-                </form>
+                <div class="field">
+                    <label for="fullname"><strong>Full Name</strong></label>
+                    <input class="input" id="fullname" name="fullname" placeholder="John Doe" required />
+                    <small class="error">Full name is required.</small>
+                </div>
+                <div class="field">
+                    <label for="email"><strong>Email</strong></label>
+                    <input class="input" id="email" name="email" type="email" placeholder="you@example.com" required />
+                    <small class="error">Valid email is required.</small>
+                </div>
+                <div class="field">
+                    <label for="timeslot"><strong>Time Slot</strong></label>
+                    <input class="input" id="timeslot" name="timeslot" type="datetime-local" required />
+                    <small class="error">Please pick a time slot.</small>
+                </div>
+                <button class="btn" type="submit">Request demo</button>
             </div>
         </form>
     </dialog>
