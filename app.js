@@ -248,3 +248,20 @@ $('#previewRoom')?.addEventListener('click', () => toast('Launching preview (moc
 
 // FOOTER YEAR
 $('#year') && ($('#year').textContent = new Date().getFullYear());
+
+document.addEventListener("DOMContentLoaded", () => {
+    const demoForm = document.getElementById("demoForm");
+    const demoModal = document.getElementById("demoModal");
+    const closeBtn = document.getElementById("closeModal");
+
+    // Submit handler (can add validation but doesn't block closing anymore)
+    demoForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // optional: still check inputs
+        demoModal.close();
+        alert("Demo request submitted!");
+    });
+
+    // Manual close button (always works)
+    closeBtn.addEventListener("click", () => demoModal.close());
+});
