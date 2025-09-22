@@ -87,8 +87,68 @@
         </section>
     </main>
 
-    <footer class="site-footer"></footer>
-    <dialog id="demoModal" class="modal"></dialog>
+    <!-- Footer -->
+    <footer role="contentinfo" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="KindlyMeet-word-logo - Copy.png" alt="KindlyMeet logo" />
+                <p class="muted">Theme: #FAEA93, black, white</p>
+            </div>
+
+            <div class="fcol">
+                <strong>Product</strong>
+                <a href="features.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+            </div>
+
+            <div class="fcol">
+                <strong>Company</strong>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="fcol">
+                <strong>Follow</strong>
+                <a href="#">LinkedIn</a>
+                <a href="#">X</a>
+            </div>
+        </div>
+
+        <div class="container fine">
+            <span>&copy; <span id="year"></span> KindlyMeet.</span>
+            <a href="#" class="muted">Privacy</a>
+            <a href="#" class="muted">Terms</a>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <dialog id="demoModal" class="modal" aria-labelledby="demoTitle">
+        <form id="demoForm" class="modal-card" novalidate>
+            <header class="modal-header">
+                <h3 id="demoTitle">Book a demo</h3>
+                <button type="button" id="closeModal" class="btn-ghost close-btn" aria-label="Close">✕</button>
+            </header>
+            <div class="modal-body">
+                <div class="field">
+                    <label for="fullname"><strong>Full Name</strong></label>
+                    <input class="input" id="fullname" name="fullname" placeholder="John Doe" required />
+                    <small class="error">Full name is required.</small>
+                </div>
+                <div class="field">
+                    <label for="email"><strong>Email</strong></label>
+                    <input class="input" id="email" name="email" type="email" placeholder="you@example.com" required />
+                    <small class="error">Valid email is required.</small>
+                </div>
+                <div class="field">
+                    <label for="timeslot"><strong>Time Slot</strong></label>
+                    <input class="input" id="timeslot" name="timeslot" type="datetime-local" required />
+                    <small class="error">Please pick a time slot.</small>
+                </div>
+                <button class="btn" type="submit">Request demo</button>
+            </div>
+        </form>
+    </dialog>
+
     <div class="toast" id="toast"></div>
 
     <img src="your-image.jpg" alt="Background" class="fixed-bottom-bg">
